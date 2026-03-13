@@ -1,0 +1,29 @@
+<svg width="262" height="192" viewBox="0 0 262 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_178_752)">
+<path d="M6.65552 21C6.65552 14.3726 12.0281 9 18.6555 9H227.311C233.938 9 239.311 14.3726 239.311 21V177C239.311 183.627 233.938 189 227.311 189H18.6555C12.0281 189 6.65552 183.627 6.65552 177V21Z" fill="#FBFCFE" shape-rendering="crispEdges"/>
+<path d="M143.5 144.205L138.205 149.5H141.5V150.5H136.5V145.5H137.5V148.795L142.795 143.5L143.5 144.205Z" fill="#FC0404"/>
+<text fill="#FC0404" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="148" y="151.969">1,52%</tspan></text>
+<text fill="black" fill-opacity="0.35" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="185" y="151.969">forecast</tspan></text>
+<path d="M13.5 149.795L18.795 144.5H15.5V143.5H20.5V148.5H19.5V145.205L14.205 150.5L13.5 149.795Z" fill="#14BA6D"/>
+<text fill="#14BA6D" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="25" y="151.969">2,08%</tspan></text>
+<text fill="black" fill-opacity="0.35" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="62" y="151.969">last month</tspan></text>
+<line x1="7.65552" y1="116.5" x2="237.656" y2="116.5" stroke="#686868" stroke-opacity="0.1"/>
+<rect x="29" y="29" width="64" height="64" rx="32" fill="#EB5757" fill-opacity="0.2"/>
+<path d="M61.9375 49.2812V54.3732L62.0266 54.3696C62.6107 54.3469 63.4166 54.3398 63.9963 54.4557C64.5215 54.5607 65.0153 54.793 65.3807 54.9961C65.8927 55.2808 66.2354 55.7172 66.4293 56.2002C66.5092 56.1922 66.5923 56.1847 66.6778 56.178C67.2628 56.1326 68.1667 56.1069 68.8482 56.3796C69.5424 56.6572 70.14 57.2938 70.4994 57.7228C70.6398 57.8904 70.7634 58.0507 70.8643 58.1875H71.9547C74.1733 58.1875 75.9069 60.1031 75.6861 62.3106L75.177 67.4018C75.0853 68.3183 74.8018 69.2051 74.3449 70.0048L71.7288 74.5829C71.2281 75.4592 70.2962 76 69.2869 76H57.4713C56.406 76 55.4321 75.3981 54.9557 74.4453L52.6776 69.889L48.0062 62.1034C47.2252 60.8018 47.6043 59.1163 48.8672 58.2743C49.9951 57.5224 51.4969 57.6711 52.4554 58.6296L55.375 61.5492V49.2812C55.375 47.4691 56.8441 46 58.6562 46C60.4684 46 61.9375 47.4691 61.9375 49.2812Z" fill="#EB5757" fill-opacity="0.9"/>
+<text fill="black" fill-opacity="0.6" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="26" font-weight="600" letter-spacing="0em"><tspan x="117" y="57.7656">351 Mil</tspan></text>
+<text fill="black" fill-opacity="0.5" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="117" y="90.4531">Clicks</tspan></text>
+</g>
+<defs>
+<filter id="filter0_d_178_752" x="0.655518" y="0" width="261.344" height="192" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_178_752"/>
+<feOffset dy="-3"/>
+<feGaussianBlur stdDeviation="2.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.495833 0 0 0 0 0.495833 0 0 0 0 0.495833 0 0 0 0.3 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_178_752"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_178_752" result="shape"/>
+</filter>
+</defs>
+</svg>

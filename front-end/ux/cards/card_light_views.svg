@@ -1,0 +1,33 @@
+<svg width="260" height="190" viewBox="0 0 260 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_178_785)">
+<path d="M7 20C7 13.3726 12.3726 8 19 8H227.655C234.283 8 239.656 13.3726 239.656 20V176C239.656 182.627 234.283 188 227.656 188H19C12.3726 188 7 182.627 7 176V20Z" fill="white" fill-opacity="0.5" shape-rendering="crispEdges"/>
+<path d="M137.5 170.795L142.795 165.5H139.5V164.5H144.5V169.5H143.5V166.205L138.205 171.5L137.5 170.795Z" fill="#14BA6D"/>
+<text fill="#14BA6D" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="149" y="172.969">1,98%</tspan></text>
+<text fill="black" fill-opacity="0.35" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="186" y="172.969">forecast</tspan></text>
+<path d="M21.5 165.205L16.205 170.5H19.5V171.5H14.5V166.5H15.5V169.795L20.795 164.5L21.5 165.205Z" fill="#FC0404"/>
+<text fill="#FC0404" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="26" y="172.969">1,20%</tspan></text>
+<text fill="black" fill-opacity="0.35" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="63" y="172.969">last month</tspan></text>
+<text fill="black" fill-opacity="0.6" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="125" y="143.969">60,8%</tspan></text>
+<text fill="black" fill-opacity="0.35" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="162" y="143.969">fallback</tspan></text>
+<text fill="black" fill-opacity="0.6" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="29" y="143.469">4</tspan></text>
+<text fill="black" fill-opacity="0.35" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="43" y="143.969">per session</tspan></text>
+<line x1="8" y1="115.5" x2="238" y2="115.5" stroke="#686868" stroke-opacity="0.1"/>
+<rect x="30" y="28" width="64" height="64" rx="32" fill="#EB5757" fill-opacity="0.2"/>
+<path d="M66.6875 60C66.6875 62.5888 64.5888 64.6875 62 64.6875C59.4112 64.6875 57.3125 62.5888 57.3125 60C57.3125 57.4112 59.4112 55.3125 62 55.3125C64.5888 55.3125 66.6875 57.4112 66.6875 60Z" fill="#EB5757" fill-opacity="0.9"/>
+<path d="M47 60C47 60 52.625 49.6875 62 49.6875C71.375 49.6875 77 60 77 60C77 60 71.375 70.3125 62 70.3125C52.625 70.3125 47 60 47 60ZM62 66.5625C65.6244 66.5625 68.5625 63.6244 68.5625 60C68.5625 56.3756 65.6244 53.4375 62 53.4375C58.3756 53.4375 55.4375 56.3756 55.4375 60C55.4375 63.6244 58.3756 66.5625 62 66.5625Z" fill="#EB5757" fill-opacity="0.9"/>
+<text fill="black" fill-opacity="0.6" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="26" font-weight="600" letter-spacing="0em"><tspan x="118" y="56.7656">1.2 Mi</tspan></text>
+<text fill="black" fill-opacity="0.5" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="118" y="89.4531">Views</tspan></text>
+</g>
+<defs>
+<filter id="filter0_d_178_785" x="0" y="0" width="260" height="190" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-2" dy="-3"/>
+<feGaussianBlur stdDeviation="2.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.495833 0 0 0 0 0.495833 0 0 0 0 0.495833 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_178_785"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_178_785" result="shape"/>
+</filter>
+</defs>
+</svg>

@@ -1,7 +1,7 @@
 # UI Prompt Studio
 
 Interface minimalista para geração de código HTML, CSS e JavaScript via IA.
-Digite uma instrução em linguagem natural e receba código funcional com pré-visualização em tempo real.
+Digite uma instrução em linguagem natural e receba código funcional com prcdé-visualização em tempo real.
 
 ![Preview](assets/preview.png)
 

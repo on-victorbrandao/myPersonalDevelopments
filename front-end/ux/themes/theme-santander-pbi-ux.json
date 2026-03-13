@@ -1,0 +1,156 @@
+﻿{
+  "name": "# Design System PBI Santander",
+  "$schema": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/refs/heads/main/Report%20Theme%20JSON%20Schema/reportThemeSchema-2.144.json",
+  "dataColors": [
+    "#FC0404", "#FF2626", "#FF5959", "#FF9696", "#FFC1C1", "#FFDDDD", "#FFF0F0", "#FDF6F6"
+  ],
+  "tableAccent": "#FFAC00",
+  "maximum": "#545454",
+  "center": "#ADADAD",
+  "minimum": "#F8F8F8",
+  "bad": "#FF5959",
+  "neutral": "#DCDCDC",
+  "good": "#4DDB72",
+  "foreground": "#363636",
+  "foregroundNeutralSecondary": "#676767",
+  "backgroundNeutral": "#FFFFFF",
+
+  "textClasses": {
+    "label": {
+      "color": "#363636",
+      "fontFace": "Santander Micro Text",
+      "fontSize": 8
+    },
+    "callout": {
+      "color": "#363636",
+      "fontFace": "Santander Micro Text",
+      "fontSize": 10
+    },
+    "title": {
+      "color": "#545454",
+      "fontFace": "Santander Headline",
+      "fontSize": 12
+    },
+    "header": {
+      "color": "#363636",
+      "fontFace": "Santander Headline",
+      "fontSize": 14
+    }
+  },
+
+  "visualStyles": {
+    "*": {
+      "*": {
+        "general": [{
+          "responsive": true
+        }]
+      }
+    },
+    "columnChart": {
+      "*": {
+        "columns": [{
+          "cornerRadiusTopLeft": 8,
+          "cornerRadiusTopRight": 8,
+          "cornerRadiusBottomLeft": 0,
+          "cornerRadiusBottomRight": 0
+        }],
+        "dataColors": [{
+          "solid": {
+            "color": "#4CAF50"
+          }
+        }]
+      }
+    }
+  },
+  "dataColors": [
+    "#4CAF50", "#FFC107", "#03A9F4", "#E91E63", "#9C27B0"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#212121",
+  "tableAccent": "#4CAF50"
+},
+        "background": [{ "transparency": 100 }],
+        "border": [{
+          "color": { "solid": { "color": "#F7F7F7" } },
+          "show": true,
+          "radius": 12
+        }],
+        "visualHeader": [{
+          "foreground": { "solid": { "color": "#363636" } },
+          "transparency": 100
+        }],
+        "outspacePane": [{
+          "transparency": 100,
+          "foregroundColor": { "solid": { "color": "#545454" } },
+          "titleSize": 8,
+          "headerSize": 8,
+          "checkboxAndApplyColor": { "solid": { "color": "#B9D5FF" } }
+        }],
+        "filterCard": [
+          {
+            "$id": "Applied",
+            "backgroundColor": { "solid": { "color": "#F3F2F1" } },
+            "foregroundColor": { "solid": { "color": "#363636" } },
+            "textSize": 8,
+            "transparency": 100
+          },
+          {
+            "$id": "Available",
+            "backgroundColor": { "solid": { "color": "#FFFFFF" } },
+            "foregroundColor": { "solid": { "color": "#545454" } },
+            "textSize": 8,
+            "transparency": 100
+          }
+        ]
+      }
+    },
+
+    "clusteredBarChart": {
+      "*": {
+        "stylePreset": [{ "name": "ThemeVisualBarChart1" }]
+      },
+      "ThemeVisualBarChart1": {
+        "background": [{ "transparency": 100 }],
+        "border": [{
+          "color": { "solid": { "color": "#F7F7F7" } },
+          "show": true,
+          "radius": 12
+        }],
+        "visualHeader": [{
+          "foreground": { "solid": { "color": "#363636" } },
+          "transparency": 100
+        }],
+        "outspacePane": [{
+          "transparency": 100,
+          "foregroundColor": { "solid": { "color": "#545454" } },
+          "titleSize": 8,
+          "headerSize": 8,
+          "checkboxAndApplyColor": { "solid": { "color": "#B9D5FF" } }
+        }],
+        "filterCard": [
+          {
+            "$id": "Applied",
+            "backgroundColor": { "solid": { "color": "#F3F2F1" } },
+            "foregroundColor": { "solid": { "color": "#363636" } },
+            "textSize": 8,
+            "transparency": 100
+          },
+          {
+            "$id": "Available",
+            "backgroundColor": { "solid": { "color": "#FFFFFF" } },
+            "foregroundColor": { "solid": { "color": "#545454" } },
+            "textSize": 8,
+            "transparency": 100
+          }
+        ]
+      }
+    },
+
+    "page": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 100 }],
+        "outspace": [{ "transparency": 100 }]
+      }
+    }
+  }
+}

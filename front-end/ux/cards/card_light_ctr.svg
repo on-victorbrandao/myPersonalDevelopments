@@ -1,0 +1,36 @@
+<svg width="262" height="192" viewBox="0 0 262 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_179_876)">
+<path d="M4.31104 21C4.31104 14.3726 9.68362 9 16.311 9H224.967C231.594 9 236.967 14.3726 236.967 21V177C236.967 183.627 231.594 189 224.967 189H16.311C9.68363 189 4.31104 183.627 4.31104 177V21Z" fill="#FBFCFE" shape-rendering="crispEdges"/>
+<g clip-path="url(#clip0_179_876)">
+<path d="M136.034 146.987H143.522L141.192 144.657L141.9 143.95L145.435 147.485L141.9 151.021L141.192 150.314L143.522 147.984H136.034V146.987Z" fill="#FF9500"/>
+</g>
+<text fill="#FF9500" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="150.971" y="152.454">0,68%</tspan></text>
+<text fill="black" fill-opacity="0.35" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="187.971" y="152.454">forecast</tspan></text>
+<path d="M18.5 144.205L13.205 149.5H16.5V150.5H11.5V145.5H12.5V148.795L17.795 143.5L18.5 144.205Z" fill="#FC0404"/>
+<text fill="#FC0404" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="23" y="151.969">2,13%</tspan></text>
+<text fill="black" fill-opacity="0.35" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="12" letter-spacing="0em"><tspan x="60" y="151.969">last month</tspan></text>
+<line x1="5.31104" y1="116.5" x2="235.311" y2="116.5" stroke="#686868" stroke-opacity="0.1"/>
+<rect x="27" y="29" width="64" height="64" rx="32" fill="#EB5757" fill-opacity="0.2"/>
+<path d="M69.2036 50.7964C69.6613 51.254 69.9576 52.0424 69.5 52.5L50.5 71.5C50.0424 71.9576 49.254 71.6613 48.7964 71.2036C48.3387 70.746 48.0424 69.9576 48.5 69.5L67.5 50.5C67.9576 50.0424 68.746 50.3387 69.2036 50.7964Z" fill="#EB5757" fill-opacity="0.9"/>
+<path d="M52.4375 57.25C50.8842 57.25 49.625 55.9908 49.625 54.4375C49.625 52.8842 50.8842 51.625 52.4375 51.625C53.9908 51.625 55.25 52.8842 55.25 54.4375C55.25 55.9908 53.9908 57.25 52.4375 57.25ZM52.4375 59.125C55.0263 59.125 57.125 57.0263 57.125 54.4375C57.125 51.8487 55.0263 49.75 52.4375 49.75C49.8487 49.75 47.75 51.8487 47.75 54.4375C47.75 57.0263 49.8487 59.125 52.4375 59.125Z" fill="#EB5757" fill-opacity="0.9"/>
+<path d="M65.5625 70.375C64.0092 70.375 62.75 69.1158 62.75 67.5625C62.75 66.0092 64.0092 64.75 65.5625 64.75C67.1158 64.75 68.375 66.0092 68.375 67.5625C68.375 69.1158 67.1158 70.375 65.5625 70.375ZM65.5625 72.25C68.1513 72.25 70.25 70.1513 70.25 67.5625C70.25 64.9737 68.1513 62.875 65.5625 62.875C62.9737 62.875 60.875 64.9737 60.875 67.5625C60.875 70.1513 62.9737 72.25 65.5625 72.25Z" fill="#EB5757" fill-opacity="0.9"/>
+<text fill="black" fill-opacity="0.6" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="26" font-weight="600" letter-spacing="0em"><tspan x="115" y="57.7656">29,2%</tspan></text>
+<text fill="black" fill-opacity="0.5" xml:space="preserve" style="white-space: pre" font-family="Segoe UI" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="115" y="90.4531">CTR</tspan></text>
+</g>
+<defs>
+<filter id="filter0_d_179_876" x="0.311035" y="0" width="261.689" height="192" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_179_876"/>
+<feOffset dx="2" dy="-3"/>
+<feGaussianBlur stdDeviation="2.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.495833 0 0 0 0 0.495833 0 0 0 0 0.495833 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_179_876"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_179_876" result="shape"/>
+</filter>
+<clipPath id="clip0_179_876">
+<rect width="12" height="12" fill="white" transform="translate(140.485 139) rotate(45)"/>
+</clipPath>
+</defs>
+</svg>
