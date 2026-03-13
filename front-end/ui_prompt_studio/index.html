@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Visando uma melhor produtividade, agregando conhecimentos e alinhado com boas práticas de UX & UI Design." />
+  <title>UI Prompt Studio.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <svg class="header__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="2" y="3" width="20" height="18" rx="3" />
+      <path d="M8 10l-3 3 3 3M16 10l3 3-3 3M13 7l-2 10" />
+    </svg>
+    <h1 class="header__title">UI Prompt Studio.</h1>
+  </header>
+
+  <div class="input-wrapper" role="search">
+    <textarea id="prompt" class="input-wrapper__textarea" rows="1"
+      placeholder="Digite seu comando ou solicitação neste campo para ser processado:"
+      aria-label="Solicitação de design" autocomplete="off" spellcheck="false"></textarea>
+    <button class="input-wrapper__btn" id="btn-send" aria-label="Enviar" data-original-label="send">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" aria-hidden="true">
+        <line x1="22" y1="2" x2="11" y2="13" />
+        <polygon points="22 2 15 22 11 13 2 9 22 2" />
+      </svg>
+    </button>
+  </div>
+
+  <main class="panels">
+
+    <section class="panel" id="code-panel" aria-label="Código gerado">
+      <div class="panel__bar">
+        <span class="panel__label">Código gerado</span>
+        <div class="panel__actions">
+          <button class="panel__btn" id="btn-copy">Copiar</button>
+          <button class="panel__btn" id="btn-clear">Limpar</button>
+        </div>
+      </div>
+      <div class="panel__body">
+        <span class="panel__placeholder" id="code-placeholder">
+          Espaço para geração dos códigos...
+        </span>
+        <code class="panel__code" id="code-output" aria-live="polite"></code>
+        <div class="loader" id="loader-code" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="preview-panel" aria-label="Pré-visualização">
+      <div class="panel__bar">
+        <span class="panel__label">Pré-visualização</span>
+        <div class="panel__actions">
+          <button class="panel__btn" id="btn-refresh">Atualizar</button>
+        </div>
+      </div>
+      <div class="panel__body panel__body--preview">
+        <span class="panel__placeholder" id="preview-placeholder">
+          Espaço para geração dos elementos resultantes das gerações de código...
+        </span>
+        <iframe id="preview-frame" class="panel__iframe" title="Pré-visualização"
+          sandbox="allow-scripts allow-same-origin"></iframe>
+        <div class="loader" id="loader-preview" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
