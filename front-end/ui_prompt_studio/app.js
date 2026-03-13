@@ -1,5 +1,5 @@
-// troque pela sua Gemini key — gerada em aistudio.google.com
-const API_KEY = '';  // insira api key
+// troque pela Gemini key — gerada em aistudio.google.com
+const API_KEY = '%%GEMINI_API_KEY%%';
 
 const MODEL = 'gemini-2.5-flash';
 const ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
