@@ -62,3 +62,34 @@ def get_produto_novo(client: gspread.Client) -> dict | None:
 
 if __name__ == "__main__":
     pass
+
+# pega o cookie salvo na aba WebScraping (é sempre a mesma linha fixa). se não achar a linha ou vier vazio, para tudo e explica o motivo em vez de seguir com cookie em branco
+def get_cookie_atual(client: gspread.Client) -> tuple[str, gspread.Worksheet, int]:
+    sh = client.open_by_key(SPREADSHEET_ID)
+    ws = sh.worksheet(SHEET_WEBSCRAPING)
+    registros = ws.get_all_records()
+
+    for idx, registro in enumerate(registros):
+        if (
+            registro.get("categoria") == "/afiliados/linkbuilder"
+            and registro.get("sub_categoria") == "/cabecalhos/solicitacao/cookie"
+        ):
+            cookie = str(registro.get("id_cookie", "")).strip()
+            if not cookie:
+                raise RuntimeError("A linha de cookie existe, mas id_cookie está vazio.")
+
+            linha_real = idx + 2  # +1 do cabecalho, +1 porque sheets comeca em 1
+            return cookie, ws, linha_real
+
+    raise RuntimeError("Não encontrei a linha do linkbuilder na aba WebScraping.")
+
+# grava o cookie novo de volta na planilha, com data e hora
+def update_cookie_na_planilha(ws: gspread.Worksheet, linha: int, cookies_atualizados: str) -> None:
+    header = ws.row_values(1)
+    col_cookie = header.index("id_cookie") + 1
+    ws.update_cell(linha, col_cookie, cookies_atualizados)
+
+    if "data_hora_inclusao" in header:
+        col_data = header.index("data_hora_inclusao") + 1
+        agora = datetime.now(TZ_SAO_PAULO).strftime("%d/%m/%Y %H:%M:%S")
+        ws.update_cell(linha, col_data, agora)
