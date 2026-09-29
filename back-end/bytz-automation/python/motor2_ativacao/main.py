@@ -39,6 +39,26 @@ USER_AGENT = (
 
 TZ_SAO_PAULO = ZoneInfo("America/Sao_Paulo")
 
+# conecta no google sheets usando a service account
+def get_sheets_client() -> gspread.Client:
+    creds_path = os.environ["GOOGLE_SERVICE_ACCOUNT_FILE"]
+    creds = Credentials.from_service_account_file(
+        creds_path,
+        scopes=["https://www.googleapis.com/auth/spreadsheets"],
+    )
+    return gspread.authorize(creds)
+
+# pega o primeiro produto com status Novo na aba Produtos (so 1, nunca a lista toda)
+def get_produto_novo(client: gspread.Client) -> dict | None:
+    sh = client.open_by_key(SPREADSHEET_ID)
+    ws = sh.worksheet(SHEET_PRODUTOS)
+    registros = ws.get_all_records()
+
+    novos = [r for r in registros if r.get("status") == "Novo"]
+    if not novos:
+        return None
+
+    return novos[0]  # limit 1 aqui
 
 if __name__ == "__main__":
     pass
