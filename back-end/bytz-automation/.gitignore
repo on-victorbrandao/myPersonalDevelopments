@@ -1,5 +1,6 @@
 .env
 venv/
 python/config/service_account.json
+python/motor2_ativacao/main_2.py
 __pycache__/
 *.pyc

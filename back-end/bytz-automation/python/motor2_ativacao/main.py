@@ -60,9 +60,6 @@ def get_produto_novo(client: gspread.Client) -> dict | None:
 
     return novos[0]  # limit 1 aqui
 
-if __name__ == "__main__":
-    pass
-
 # pega o cookie salvo na aba WebScraping (é sempre a mesma linha fixa). se não achar a linha ou vier vazio, para tudo e explica o motivo em vez de seguir com cookie em branco
 def get_cookie_atual(client: gspread.Client) -> tuple[str, gspread.Worksheet, int]:
     sh = client.open_by_key(SPREADSHEET_ID)
@@ -93,3 +90,31 @@ def update_cookie_na_planilha(ws: gspread.Worksheet, linha: int, cookies_atualiz
         col_data = header.index("data_hora_inclusao") + 1
         agora = datetime.now(TZ_SAO_PAULO).strftime("%d/%m/%Y %H:%M:%S")
         ws.update_cell(linha, col_data, agora)
+
+# funcao abaixo é a parte mais sensivel do projeto, NAO MEXER sem necessidade. junta o cookie antigo com os cookies novos que vieram no set-cookie da resposta, o novo sempre sobrescreve o antigo se a chave repetir, e no final tira o _csrf pra mandar no header depois. é a copia fiel do que rodava no n8n
+def merge_cookie(old_cookie_string: str, set_cookie_headers: list[str]) -> dict:
+    cookie_map: dict[str, str] = {}
+
+    if old_cookie_string:
+        for parte in old_cookie_string.split(";"):
+            parte = parte.strip()
+            if "=" in parte:
+                chave, _, valor = parte.partition("=")
+                cookie_map[chave.strip()] = valor
+
+    for bruto in set_cookie_headers or []:
+        cookie_parte = bruto.split(";")[0].strip()
+        if "=" in cookie_parte:
+            chave, _, valor = cookie_parte.partition("=")
+            cookie_map[chave.strip()] = valor
+
+    novo_cookie_string = "; ".join(f"{chave}={valor}" for chave, valor in cookie_map.items())
+    csrf_token = cookie_map.get("_csrf", "")
+
+    return {
+        "cookies_atualizados": novo_cookie_string,
+        "csrf_token": csrf_token,
+    }
+
+if __name__ == "__main__":
+    pass
