@@ -1,2 +1,8 @@
-.github
-front-end
+# Bloqueia a pasta do github
+.github/
+
+# Bloqueia todo o conteúdo da pasta front-end...
+front-end/*
+
+# ...EXCEÇÃO: Permite exclusivamente a pasta prompt-studio
+!front-end/prompt-studio/
