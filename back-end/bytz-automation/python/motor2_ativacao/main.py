@@ -116,5 +116,25 @@ def merge_cookie(old_cookie_string: str, set_cookie_headers: list[str]) -> dict:
         "csrf_token": csrf_token,
     }
 
+# faz um GET na pagina do linkbuilder só pra capturar os cookies novos que o ML devolve. se o GET não vier 200, para na hora, pois não faz sentido seguir com cookie desatualizado
+def get_set_cookies(cookie_atual: str) -> list[str]:
+    resposta = requests.get(
+        ML_LINKBUILDER_URL,
+        headers={"cookie": cookie_atual},
+        timeout=15,
+    )
+
+    if resposta.status_code != 200:
+        raise RuntimeError(
+            f"GET do linkbuilder falhou: HTTP {resposta.status_code}. Não vou atualizar o cookie nem gerar o link."
+        )
+
+    # o requests normal junta todos os set-cookie em uma string só, e isso quebra a logica, por isso pega direto do raw pra manter cada cookie separado
+    headers = resposta.raw.headers
+    if not hasattr(headers, "getlist"):
+        raise RuntimeError("Não consegui ler os cabeçalhos Set-Cookie separadamente.")
+
+    return headers.getlist("Set-Cookie")
+
 if __name__ == "__main__":
     pass
